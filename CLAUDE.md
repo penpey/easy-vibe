@@ -1,312 +1,119 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
 
-## Project Overview
+## Branch: study-notes
 
-**Easy-Vibe** is an educational curriculum for learning AI Vibe Coding from zero to advanced levels. It's a documentation-based project using **VitePress** to serve educational content about AI-assisted software development.
+This is a **personal learning branch** forked from `datawhalechina/easy-vibe`. All learning notes, annotations, and experiments go here — `main` stays clean for syncing upstream updates.
 
-The curriculum follows a progressive four-stage structure:
+**Two remotes:**
+- `origin` → github.com/penpey/easy-vibe (personal fork, push here)
+- `upstream` → github.com/datawhalechina/easy-vibe (original repo, pull updates)
 
-- **Stage 0 (幼儿园)**: Introduction to AI programming through games
-- **Stage 1 (AI 产品经理)**: Building AI-powered web application prototypes
-- **Stage 2 (初中级开发工程师)**: Full-stack development with databases and deployment
-- **Stage 3 (高级开发工程师)**: Cross-platform development (WeChat mini-programs, Android apps, MCP)
+## Curriculum Overview
 
-## Development Commands
+Easy-Vibe is a progressive AI Vibe Coding curriculum. Four stages:
 
-### Start Local Documentation Server
+| Stage | Title | Goal |
+|-------|-------|------|
+| Stage 1 | AI 产品经理 | Product thinking + AI IDE tools → build a demoable prototype |
+| Stage 2 | 初中级开发工程师 | Full-stack: frontend, backend, database, deployment, billing |
+| Stage 3 | 高级开发工程师 | MCP, Agent Teams, cross-platform apps, RAG |
+| Appendix | 知识字典 | 9 areas, 80+ topics — reference on demand |
 
-```bash
-npm install      # Install dependencies (first time only)
-npm run dev      # Start VitePress dev server
-```
+Primary content language: **Chinese (zh-cn)**. English version also available.
 
-The documentation will be available at `http://localhost:5173` (VitePress default port)
+## Learning Plan
 
-### Build/Run Commands
+See `docs/superpowers/specs/2026-05-18-learning-plan-design.md` for the full 22-week schedule (方案 A).
 
-- `npm run dev` - Start VitePress development server with hot reload
-- `npm run build` - Build static site for production (outputs to `docs/.vitepress/dist`)
-- `npm run preview` - Preview production build locally
-- `npm run format` - Format code using Prettier
+This plan is designed for **Stage 1 → Stage 2 → Stage 3** sequential progression, about 4-5 months total.
 
-### Node Version Requirement
+## Daily Learning Workflow
 
-- Node.js >= 18.0.0 required (specified in package.json `engines`)
-
-## Project Architecture
-
-### VitePress Base Path Configuration
-
-The site automatically configures its base path based on the deployment environment:
-
-- **Vercel**: Uses `/` as base (detected via `VERCEL` environment variable)
-- **GitHub Pages / Local**: Uses `/easy-vibe/` as base
-
-This logic is in `docs/.vitepress/config.mjs:3-5`. When linking assets or configuring paths, the `${base}` variable is used to ensure compatibility across environments.
-
-### Directory Structure
-
-```
-easy-vibe/
-├── docs/                        # Main documentation content (served by VitePress)
-│   ├── .vitepress/             # VitePress configuration and theme
-│   │   ├── config.mjs          # Site configuration (nav, sidebar, plugins)
-│   │   ├── theme/              # Custom theme extensions
-│   │   │   ├── Layout.vue      # Override default layout with typewriter effect
-│   │   │   ├── index.js        # Theme setup (Viewer.js, TypeIt, image optimization)
-│   │   │   └── style.css       # Custom CSS overrides
-│   │   ├── dist/               # Production build output (generated)
-│   │   └── cache/              # VitePress cache (generated)
-│   ├── index.md                # Homepage
-│   ├── public/                 # Static assets (logo.png, etc.)
-│   ├── assets/                 # Symlink to ../assets
-│   ├── stage-1/                # Stage 1 content (AI 产品经理)
-│   ├── stage-2/                # Stage 2 content (初中级开发工程师)
-│   ├── stage-3/                # Stage 3 content (高级开发工程师)
-│   ├── appendix/               # Reference materials (AI capability dictionary)
-│   ├── examples/               # Practical examples and tutorials (legacy)
-│   ├── extra/                  # Additional knowledge (Git, API, RAG, etc.)
-│   ├── guide/                  # Course guide
-│   └── project/                # Legacy project documentation
-├── assets/                     # Images and static assets
-├── package.json                # Project dependencies and scripts
-├── vercel.json                 # Vercel deployment configuration
-└── README.md                   # Project overview and contribution guide
-```
-
-### Content Organization
-
-Each stage follows a numbered chapter structure:
-
-```
-stage-{N}/
-└── {category or chapter-dir}/
-    └── index.md          # Main content file (or .md file directly)
-```
-
-Examples:
-
-- `stage-1/introduction-to-ai-ide/index.md`
-- `stage-2/backend/what-is-api/extra2/extra2-what-is-api.md`
-
-**Note**: Content files may use either `index.md` or direct `.md` files depending on the chapter structure.
-
-### Documentation System (VitePress)
-
-The project uses **VitePress 2.0.0-alpha.15** with these key features:
-
-**Configuration** (`docs/.vitepress/config.mjs`):
-
-- **Single Sidebar**: Route-based sidebars configured per path prefix (`/stage-1/`, etc.)
-- **Navigation**: Top nav with links to each stage and appendix
-- **Search**: Local search via `minisearch` (no external API required)
-- **Dark Mode**: Built-in VitePress theme with toggle
-
-**Custom Theme** (`docs/.vitepress/theme/`):
-
-- **Image Viewer**: Viewer.js integration for zoom/rotate/flip on all images
-- **Typewriter Effect**: TypeIt.js for homepage hero tagline animation
-- **Image Optimization**: Automatic image height classes based on aspect ratio
-- **Custom Layout**: Extends default theme with `Layout.vue` override
-- **Reading Settings**: Element Plus popover panel for adjusting font size (12-18px) and line height (1.25-1.8) with localStorage persistence
-
-**Key Theme Behaviors**:
-
-- Images with aspect ratio > 1.2 get height-limited classes (tall/very-tall/ultra-tall)
-- Viewer.js initialized on `.vp-doc` container on each route change
-- Typewriter effect only activates on homepage when `frontmatter.hero.tagline` is an array
-- Font size/line height adjustments use CSS custom properties `--ev-doc-font-size` and `--ev-doc-line-height`
-- Reading settings panel appears in nav bar after the search/home buttons (gear icon)
-
-### Sidebar Management
-
-The sidebar is defined in `docs/.vitepress/config.mjs`. When adding new chapters:
-
-1. Locate the appropriate route prefix section (`/stage-1/`, etc.)
-2. Add a new object with `text` (display name) and `link` (relative path)
-3. For nested items, use `items` array with `collapsed: true|false`
-4. **Links should not include `.md` extension** - VitePress handles this
-5. Links should not include `index` - use directory path with trailing slash
-
-Example pattern:
-
-```javascript
-{
-  text: 'Chapter Title',
-  link: '/stage-1/chapter-directory/'  // Note: trailing slash, no .md
-}
-```
-
-### Asset Management
-
-- Root-level static assets are in `/assets/` at project root
-- Public files (favicon, logo) go in `docs/public/`
-- Images are referenced with relative paths from markdown file location
-- VitePress serves `docs/assets` as symlink to `../assets`
-- Image optimization is automatic via theme (height-limited classes based on aspect ratio)
-
-### Deployment
-
-**Vercel** (vercel.json):
-
-- Build command: `npm run build`
-- Output directory: `docs/.vitepress/dist`
-- Framework: vitepress
-
-**Preview Production Build**:
+### 1. Start the docs server
 
 ```bash
-npm run build
-npm run preview  # Preview built site locally
+npm run dev
 ```
 
-### Legacy Content Structure
+Open `http://localhost:5173` — read with interactive components (animations, simulators).
 
-The project maintains three legacy sections for backward compatibility:
+### 2. Sync upstream updates (when needed)
 
-1. **Project 文档** (`project/`): Older chapter-based tutorials (migrated to Stage 2)
-2. **Extra 扩展知识** (`extra/`): Supplementary topics - Git, APIs, RAG, deployment (migrated to Stage 2/3)
-3. **Examples 实战案例** (`examples/`): Practical tutorials (migrated to Stage 0/3)
+```bash
+git checkout main
+git pull upstream main
+git checkout study-notes
+git merge main
+# Resolve conflicts if any, then:
+git push origin main study-notes
+```
 
-When updating content, prefer integrating into the stage structure over adding to legacy sections.
+### 3. Take notes inline
 
-## Content Guidelines
-
-### Writing New Chapters
-
-1. Create directory: `docs/stage-{N}/{chapter-directory}/`
-2. Create `index.md` or direct `.md` file with chapter content
-3. Update `docs/.vitepress/config.mjs` sidebar with the new entry
-4. Follow Chinese language conventions (this is a Chinese curriculum)
-
-### Content Status Markers
-
-In README.md, use these status indicators:
-
-- ✅ Completed
-- 🚧 In progress/Under construction
-
-### File Naming Conventions
-
-- Use kebab-case for directories: `1.1-introduction-to-ai-ide`, `frontend`, `backend`
-- Content can be either `index.md` in a directory or a direct `.md` file
-- Images use descriptive names; can be in chapter subdirectories or root `/assets/`
-
-### Code Formatting
-
-Prettier configuration (`.prettierrc`):
-
-- No semicolons (`semi: false`)
-- Single quotes (`singleQuote: true`)
-- No trailing commas (`trailingComma: "none"`)
-
-Run `npm run format` before committing code changes.
-
-## Interactive Vue Components
-
-### Component Registration
-
-All interactive Vue components for the documentation are registered in `docs/.vitepress/theme/index.js`. To add a new component:
-
-1. Create the `.vue` file in the appropriate subdirectory of `docs/.vitepress/theme/components/`
-2. Import the component in `docs/.vitepress/theme/index.js`
-3. Register the component using `app.component('ComponentName', ComponentName)` in the `enhanceApp` function
-
-### Component Categories
-
-Components are organized by topic:
-
-- `appendix/llm-intro/` - Large Language Model interactive demos
-- `appendix/vlm-intro/` - Vision Language Model interactive demos
-- `appendix/git-intro/` - Git workflow visualizations
-- `appendix/terminal-intro/` - Terminal/CLI interactive demos
-- `appendix/web-basics/` - HTML/CSS/JavaScript fundamentals
-- `appendix/auth-design/` - Authentication/authorization demos
-- `appendix/cache-design/` - Caching strategy visualizations
-- `appendix/database-intro/` - Database fundamentals
-- `appendix/queue-design/` - Message queue demos
-- `appendix/operations/` - DevOps/monitoring demos
-- `appendix/deployment/` - Deployment architecture demos
-- `appendix/frontend-performance/` - Frontend performance demos
-- `appendix/frontend-evolution/` - Frontend history/evolution demos
-- `appendix/backend-evolution/` - Backend architecture evolution
-- `appendix/backend-languages/` - Backend language comparisons
-
-### Using Components in Markdown
-
-Components can be used directly in markdown files:
+Each chapter is at `docs/zh-cn/stage-{N}/{chapter-name}/index.md`. Read the content, then append your notes directly:
 
 ```markdown
-## LLM Basics
+<!-- Original chapter content above -->
 
-<LLMQuickStartDemo />
+---
 
-### Tokenization
+## Penpey's Notes (2026-05-19)
 
-<TokenizationDemo />
+- Key takeaway: ...
+- Question: ...
+- Practice: built a small demo using XYZ
 ```
 
-### Component Development Best Practices
+### 4. Practice: Stage 2 assignments
 
-1. **Props**: Use props for configurable demo parameters
-2. **Styling**: Use scoped CSS or Tailwind-like utility classes
-3. **Responsiveness**: Ensure components work on mobile and desktop
-4. **Accessibility**: Include aria labels where appropriate
-5. **i18n**: Keep text content minimal or use props for text
+`docs/zh-cn/stage-2/assignments/` contains 8 real projects with PRD documents. These are the core hands-on exercises — use AI IDE tools (Cursor, Claude Code) to build them.
 
-## Multi-language Support
+### 5. Build & push
 
-### Supported Locales
+```bash
+git add -A
+git commit -m "docs: chapter 1 notes + snake game practice"
+git push origin study-notes
+```
 
-The project supports 13 languages:
+## How to Navigate the Curriculum
 
-- `zh-cn` - Simplified Chinese (primary)
-- `zh-tw` - Traditional Chinese
-- `en-us` - English (US)
-- `ja-jp` - Japanese
-- `ko-kr` - Korean
-- `es-es` - Spanish
-- `fr-fr` - French
-- `de-de` - German
-- `ar-sa` - Arabic
-- `vi-vn` - Vietnamese
+- Start at **Stage 1 learning map**: `docs/zh-cn/stage-1/learning-map/index.md`
+- Each chapter: **read → follow example → recreate with your own idea**
+- Get stuck on a concept? Check the **Appendix** (`docs/zh-cn/appendix/`) before searching externally — it covers computer fundamentals, AI principles, frontend/backend basics, etc.
+- The `en/` locale has the most completed translations for Stage 2 and 3
 
-### Adding Multi-language Content
+## Key Local Dev Info
 
-1. Create content in `docs/{locale}/` following the same structure as `docs/zh-cn/`
-2. Add locale configuration in `docs/.vitepress/config.mjs` under `locales`
-3. Copy the sidebar structure from `zh-cn` and translate the text values
+- Node.js >= 18
+- VitePress dev server on port 5173
+- Interactive Vue components (LLM demos, Git visualizer, terminal emulator, etc.) only work locally — they're the main reason to run `npm run dev` instead of reading raw markdown
+- Image viewer: click any image to zoom (Viewer.js)
+- Dark mode: toggle in top nav
+- Reading settings: gear icon → adjust font size / line height (persisted in localStorage)
 
-### Content Translation Priority
+## Success checkpoints
 
-1. **Primary**: `zh-cn` (Simplified Chinese) - always complete this first
-2. **Secondary**: `en-us` (English) - for international reach
-3. **Tertiary**: Other languages based on contributor availability
+- **Stage 1 done**: You can take an idea → validate it → build a working prototype with AI
+- **Stage 2 done**: You can build and deploy a full-stack SaaS app with database, API, and payments
+- **Stage 3 done**: You can build cross-platform apps, use MCP, orchestrate AI agents, and implement RAG
 
-## Permissions
+## Git Hooks (pre-commit / pre-push)
 
-The project has configured bash permissions in `.claude/settings.local.json`:
+There are husky hooks that run **only when Vue files change**:
+- `pre-commit`: Runs ESLint + `npm run build` — skip with `git commit --no-verify`
+- `pre-push`: Runs `npm run build:force` — skip with `git push --no-verify`
 
-- File operations: `which`, `find`, `mv`, `tree`, `cat`, `curl`, `lsof`, `mkdir`, `cp`, `ls`
-- Process management: `xargs ps`, `kill`
-- Development: `npm run dev`, `npm run build`, `npm run preview`, `npm run format`
+You probably won't hit these unless you edit interactive Vue components. Markdown-only changes bypass them.
 
-## Key Context for Development
+## Note: GitHub Actions Deploy
 
-- **Educational Focus**: This is curriculum content, not application code
-- **Target Audience**: Beginners to advanced developers learning AI-assisted programming
-- **Language**: Primary content is in Chinese
-- **Build Pipeline**: VitePress requires build step for production (`npm run build`)
-- **Git Workflow**: Content changes should preserve formatting and structure
-- **Asset Paths**: Always use relative paths from markdown file location
+The `.github/workflows/deploy.yml` only triggers when `github.repository_owner == 'datawhalechina'`, so **it won't run on your fork**. If you ever want to deploy your fork to GitHub Pages, you'd need a separate workflow.
 
-When making changes:
+## File & Formatting
 
-- Preserve the VitePress configuration in `docs/.vitepress/config.mjs`
-- Maintain sidebar structure consistency in config.mjs
-- Test locally with `npm run dev` before committing
-- Check that image links work correctly
-- Ensure theme customizations in `.vitepress/theme/` are not broken
-- Run `npm run format` before committing code changes (uses Prettier: no semicolons, single quotes)
+- Chapters use kebab-case directories with `index.md`
+- Prettier: no semicolons, single quotes, no trailing commas (`npm run format` to auto-format)
+- All images use relative paths from the markdown file location
