@@ -2,7 +2,7 @@
 
 本文件用于指导 Claude Code 在此仓库中工作。
 
-## 分支说明：study-notes
+## 分支说明：learning
 
 这是从 `datawhalechina/easy-vibe` fork 过来的**个人学习分支**。所有学习笔记、注解、练习代码都放这里 —— `main` 分支保持干净，只用来同步上游更新。
 
@@ -40,10 +40,10 @@ npm run dev
 ```bash
 git checkout main
 git pull upstream main
-git checkout study-notes
+git checkout learning
 git merge main
 # 如果有冲突就解决，然后：
-git push origin main study-notes
+git push origin main learning
 ```
 
 ### 3. 在原文下面记笔记
@@ -69,7 +69,7 @@ git push origin main study-notes
 ```bash
 git add -A
 git commit -m "第 X 章笔记 + 练习"
-git push origin study-notes
+git push origin learning
 ```
 
 ## 课程导航建议
@@ -103,7 +103,9 @@ git push origin study-notes
 
 ## GitHub Actions 部署
 
-`.github/workflows/deploy.yml` 限制只有 `datawhalechina` 仓库才触发，**在你的 fork 上不会运行**。如果以后想用自己的 fork 部署到 GitHub Pages，需要单独配置。
+- **GitHub Pages**：push 到 `learning` 分支会自动部署到 `https://penpey.github.io/easy-vibe/`
+- **Vercel**：`https://easy-vibe-omega.vercel.app`
+- deploy.yml 已修改支持 fork 仓库部署
 
 ## 文件规范
 
