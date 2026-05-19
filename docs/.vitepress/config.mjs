@@ -1415,7 +1415,7 @@ Sitemap: ${siteUrl}/sitemap.xml
     )
 
     // Copy all .md files to dist for download/copy features
-    const srcDir = siteConfig.srcDir || path.resolve(outDir, '../../')
+    const srcDir = siteConfig.srcDir || path.resolve(outDir, '..')
     function copyMdFiles(src, dest) {
       if (!fs.existsSync(dest)) {
         fs.mkdirSync(dest, { recursive: true })
@@ -1428,7 +1428,8 @@ Sitemap: ${siteUrl}/sitemap.xml
           if (
             entry.name === '.vitepress' ||
             entry.name === 'public' ||
-            entry.name === 'node_modules'
+            entry.name === 'node_modules' ||
+            entry.name === 'dist'
           )
             continue
           copyMdFiles(srcPath, destPath)
