@@ -8,6 +8,7 @@ import { onMounted, onBeforeUnmount, ref, watch, computed } from 'vue'
 import ReadingProgress from './components/ReadingProgress.vue'
 import { Setting } from '@element-plus/icons-vue'
 import easyVibePaths from './data/easyVibePaths.json'
+import { Analytics } from '@vercel/analytics/vue'
 
 const { frontmatter } = useData()
 const route = useRoute()
@@ -614,7 +615,8 @@ watch(sidebarCollapsed, (collapsed) => {
   </ClientOnly>
   <ClientOnly>
     <ReadingProgress v-if="!isHomePage && !isWelcomePage" />
-  </ClientOnly>  
+  </ClientOnly>
+  <Analytics />
 </template>
 
 <style>
