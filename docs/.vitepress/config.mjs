@@ -1331,6 +1331,7 @@ const productManagerSidebar = [
 ]
 
 export default defineConfig({
+  outDir: 'dist',
   markdown: {
     config: (md) => {
       md.use(markdownItKatex)
