@@ -2,10 +2,11 @@
 name: Deploy VitePress site to Pages
 
 on:
-  # Runs on pushes to main branch only
+  # Runs on pushes to main and learning branches
   push:
     branches:
       - main
+      - learning
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,7 +26,6 @@ concurrency:
 jobs:
   # Build job
   build:
-    if: github.repository_owner == 'datawhalechina'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
