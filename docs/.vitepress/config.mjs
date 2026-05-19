@@ -5,12 +5,14 @@ import markdownItKatex from 'markdown-it-katex'
 const isVercel = process.env.VERCEL === '1' || !!process.env.VERCEL_URL
 // 检查是否为 EdgeOne 部署 (通过环境变量 EDGEONE 判断)
 const isEdgeOne = !!process.env.EDGEONE || process.env.EDGEONE === '1'
+// 检查是否为 Resource Center 部署
+const isResourceCenter = process.env.DEPLOY_TARGET === 'resource-center'
 
 // 确定 Base 路径：
 // 1. 如果设置了 BASE 环境变量，优先使用
-// 2. 如果是 Vercel 或 EdgeOne，默认使用根路径 '/'
+// 2. 如果是 Vercel、EdgeOne 或 Resource Center，默认使用根路径 '/'
 // 3. 否则（如 GitHub Pages），使用 '/easy-vibe/'
-const base = process.env.BASE || (isVercel || isEdgeOne ? '/' : '/easy-vibe/')
+const base = process.env.BASE || (isVercel || isEdgeOne || isResourceCenter ? '/' : '/easy-vibe/')
 
 // 站点 URL 配置 - 根据部署环境动态确定
 const getSiteUrl = () => {
@@ -1332,6 +1334,7 @@ const productManagerSidebar = [
 
 export default defineConfig({
   outDir: 'dist',
+  cleanUrls: true,
   markdown: {
     config: (md) => {
       md.use(markdownItKatex)

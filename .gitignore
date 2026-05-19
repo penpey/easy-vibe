@@ -3,6 +3,7 @@ node_modules
 tools/*
 docs/.vitepress/dist
 docs/dist
+.resource-center/
 docs/.vitepress/cache
 temp/*
 docs/zh-cn/appendix-old-backup*/
