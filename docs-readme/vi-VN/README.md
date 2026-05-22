@@ -12,6 +12,12 @@
 
 <a href="https://trendshift.io/repositories/22079" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22079" alt="datawhalechina/easy-vibe | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
+<p align="center" style="font-size: 1.05em; color: #666; margin: 16px 0;">
+  你好 · Hello · 哈囉 · こんにちは · 안녕하세요 · Hola · Bonjour · Hallo · مرحبا · Xin chào<br>
+  Phần 1 của tutorial hiện đã hỗ trợ 10 ngôn ngữ. Chào mừng bạn bè khắp thế giới cùng bắt đầu coding!<br>
+  <span style="font-size: 0.9em; color: #888;">我们的教程（第一部分）已经支持 10 种语言，欢迎世界各地的朋友一起 coding！</span>
+</p>
+
 <p align="center">
   🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">Bat dau kham pha</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/en/appendix/">Huong dan tuong tac</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">Hoc OpenClaw</a> · 📖 <a href="#table-of-contents">Muc luc</a><br>
   <span style="font-size: 0.85em; color: #888;">🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">开始体验</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/zh-cn/appendix/">交互式教程</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">学习 OpenClaw</a> · 📖 <a href="#table-of-contents">查看目录</a></span>
@@ -145,6 +151,7 @@ Easy-Vibe giup ban bien dieu do thanh mot san pham that.
 
 ## 🔥 Tin tuc
 
+- **[2026-05-20]** 🌍 **Da phu toan bo da ngon ngu cho Stage 1**: Stage 1 hien da co day du tren tat ca cac ngon ngu ho tro (zh-cn, en, zh-tw, ja-jp, ko-kr, es-es, fr-fr, de-de, ar-sa, vi-vn). Da kiem tra dieu huong/build de tranh 404.
 - **[2026-03-29]** ✨ **Ra mat muc cau chuyen nguoi dung va nang cap voi nhung hanh trinh nguoi dung that**: Da them phan Vibe Stories moi tren trang chu voi carousel tuong tac va cac trang story rieng, sau do thay the noi dung tam bang bon cau chuyen that tu mot giao vien tieu hoc vung que, mot sinh vien dai hoc, mot giao vien CNTT trung hoc va mot tai xe xe tai da xay dung san pham that voi AI. [👉 Xem cau chuyen](https://datawhalechina.github.io/easy-vibe/zh-cn/vibe-stories/story-1.html)
 - **[2026-03-26]** 🚀 **Cap nhat thuc hanh Giai doan 2 lon**: Hoan thanh du an SaaS tot nghiep "[Ung dung Full-stack SaaS dau tien: Trang web tao noi dung](https://datawhalechina.github.io/easy-vibe/en/stage-2/assignments/fullstack-app/)" va mo rang dang ke phan "[Cach tich hop Stripe va he thong thanh toan](https://datawhalechina.github.io/easy-vibe/en/stage-2/backend/stripe-payment/)", cung nhu noi dung quan trong ve UI da san pham va quy trinh backend WeChat Mini Program.
 - **[2026-03-25]** 📚 **Phu luc moi: Nghien cuu nguoi dung va Xac thuc yeu cau**: Them bon bai viet moi ve tim kiem y tuong, mo hinh Double Diamond, Jobs to Be Done va The Mom Test giup nguoi moi bat dau kham pha va xac thuc y tuong san pham. [👉 Doc phu luc](https://datawhalechina.github.io/easy-vibe/en/appendix/)

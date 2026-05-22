@@ -304,7 +304,7 @@ z.ai 외에도 아래의 훌륭한 AI 프로그래밍 플랫폼을 시도해 볼
 
 또한 LLM에게 프로젝트 수준의 프롬프트를 직접 생성해 달라고 요청할 수도 있습니다. 지난 절에서는 스네이크 게임의 프롬프트만 우리가 직접 작성했습니다. 이제 대형 모델에게 전체 프레임워크와 구현 경로가 포함된 프롬프트를 생성하게 해 봅시다. z.ai로 바로 생성할 수 있습니다.
 
-더 좋은 프롬프트를 작성하는 법을 배우고 싶다면 [프롬프트 엔지니어링 부록](/ko-kr/appendix/8-artificial-intelligence/prompt-engineering)을 확인하세요.
+더 좋은 프롬프트를 작성하는 법을 배우고 싶다면 [프롬프트 엔지니어링 부록](/zh-cn/appendix/8-artificial-intelligence/prompt-engineering)을 확인하세요.
 
 > AI가 웹 스네이크 게임을 생성하게 하고 싶습니다. 더 완성도 높은 프롬프트가 필요합니다. 생성 결과가 더 인상적이고 재미있어야 합니다. 이에 맞는 프롬프트를 생성해 주세요. 현재 목표는 다음과 같습니다. 서로 다른 단어를 먹으면 시를 생성하는 기능이 있는 스네이크 게임을 만들고, 이미지 생성 모듈도 포함해야 합니다.
 
@@ -643,7 +643,7 @@ AI 보조 프로그래밍 시대에는 프레임워크의 모든 세부 사항�
 
 > "React로 순위표 페이지를 만들어줘. 오른쪽에는 점수 목록을 표시하고, 어떤 행을 클릭하면 아래에 플레이어 상세 정보를 보여 줘. 스타일은 간결하고 모던하게 해줘."
 
-HTML, CSS, JavaScript 같은 프론트엔드 기초 지식을 더 깊이 이해하고 싶다면 [Web 기초 부록](/ko-kr/appendix/3-browser-and-frontend/javascript-deep-dive)을 확인하세요. 프론트엔드 기술의 발전 역사를 알고 싶다면 [프론트엔드 진화사 부록](/ko-kr/appendix/3-browser-and-frontend/frontend-frameworks)을 확인하세요.
+HTML, CSS, JavaScript 같은 프론트엔드 기초 지식을 더 깊이 이해하고 싶다면 [Web 기초 부록](/zh-cn/appendix/3-browser-and-frontend/javascript-deep-dive)을 확인하세요. 프론트엔드 기술의 발전 역사를 알고 싶다면 [프론트엔드 진화사 부록](/zh-cn/appendix/3-browser-and-frontend/frontend-frameworks)을 확인하세요.
 
 ## <span id="appendix-2">[부록 2: Vibe Coding은 대체 무엇인가](#appendix-nav)</span>
 
@@ -762,3 +762,7 @@ Karpathy의 공유 내용을 더 보려면 여기에서 확인할 수 있습니�
   description="“게임화 경험”에서 출발해 로컬 개발과 제품 실습으로 계속 들어가 보기를 추천합니다."
   :items="relatedArticles"
 />
+---
+title: 'Beginner 1: Talking Is Programming'
+description: 'Build an AI-native snake game through conversation, then reuse the workflow to create your own mini game or demo.'
+---

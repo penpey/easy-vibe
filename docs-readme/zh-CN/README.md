@@ -12,6 +12,12 @@
 
 <a href="https://trendshift.io/repositories/22079" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22079" alt="datawhalechina/easy-vibe | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
+<p align="center" style="font-size: 1.05em; color: #666; margin: 16px 0;">
+  你好 · Hello · 哈囉 · こんにちは · 안녕하세요 · Hola · Bonjour · Hallo · مرحبا · Xin chào<br>
+  我们的教程（第一部分）已经支持 10 种语言，欢迎世界各地的朋友一起 coding！<br>
+  <span style="font-size: 0.9em; color: #888;">Stage 1 of our tutorial is now available in 10 languages. Friends around the world, let's start coding together!</span>
+</p>
+
 <p align="center">
   🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">开始体验</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/zh-cn/appendix/">交互式教程</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">学习 OpenClaw</a> · 📖 <a href="#目录--table-of-contents">查看目录</a><br>
   <span style="font-size: 0.85em; color: #888;">🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">Start Exploring</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/en/appendix/">Interactive Tutorial</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">Learn OpenClaw</a> · 📖 <a href="#目录--table-of-contents">Table of Contents</a></span>
@@ -144,6 +150,7 @@ Easy-Vibe 教你的，就是怎样把它一步步做成真正的产品。
 
 ## 🔥 News
 
+- **[2026-05-20]** 🌍 **第一阶段（Stage 1）多语言已全面覆盖**：Stage 1 已在所有支持的语言（zh-cn, en, zh-tw, ja-jp, ko-kr, es-es, fr-fr, de-de, ar-sa, vi-vn）下完整可用，并已完成导航/构建校验，确保不会出现 404。
 - **[2026-03-29]** ✨ **「用户故事」专区上线并更新为真实案例**：首页新增交互式故事轮播组件和独立故事页面，并将原有占位内容替换为 4 篇真实用户故事，涵盖乡村小学老师、大学生、高中信息技术老师和货车司机，展示不同背景的学习者如何用 AI 解决真实问题、做出真实产品。[👉 查看故事](https://datawhalechina.github.io/easy-vibe/zh-cn/vibe-stories/story-1.html)
 - **[2026-03-26]** 🚀 **阶段二实战内容集中更新**：补充完整 SaaS 全栈大作业[《第一个 SaaS 全栈应用——文案生成网站》](https://datawhalechina.github.io/easy-vibe/zh-cn/stage-2/assignments/copywriting-platform-supabase/)；同时大幅补全[《如何集成 Stripe 等收费系统》](https://datawhalechina.github.io/easy-vibe/zh-cn/stage-2/backend/stripe-payment/)，完善多产品 UI、微信小程序后端等关键章节。
 - **[2026-03-25]** 📚 **新增附录「用户研究与需求验证」**：包含 4 篇文章——从哪里找点子、双钻模型、Jobs to Be Done、The Mom Test 用户访谈法，帮助新手学会发现和验证产品想法。[👉 阅读附录](https://datawhalechina.github.io/easy-vibe/zh-cn/appendix/)

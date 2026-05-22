@@ -12,6 +12,12 @@
 
 <a href="https://trendshift.io/repositories/22079" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22079" alt="datawhalechina/easy-vibe | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
+<p align="center" style="font-size: 1.05em; color: #666; margin: 16px 0;">
+  你好 · Hello · 哈囉 · こんにちは · 안녕하세요 · Hola · Bonjour · Hallo · مرحبا · Xin chào<br>
+  Stage 1 of our tutorial is now available in 10 languages. Friends around the world, let's start coding together!<br>
+  <span style="font-size: 0.9em; color: #888;">我们的教程（第一部分）已经支持 10 种语言，欢迎世界各地的朋友一起 coding！</span>
+</p>
+
 <p align="center">
   🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">Start Exploring</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/en/appendix/">Interactive Tutorial</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">Learn OpenClaw</a> · 📖 <a href="#table-of-contents">Table of Contents</a><br>
   <span style="font-size: 0.85em; color: #888;">🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">开始体验</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/zh-cn/appendix/">交互式教程</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">学习 OpenClaw</a> · 📖 <a href="#table-of-contents">查看目录</a></span>
@@ -145,6 +151,7 @@ Easy-Vibe teaches you how to turn that into a real product.
 
 ## 🔥 News
 
+- **[2026-05-20]** 🌍 **Stage 1 multilingual coverage is now complete**: Stage 1 is fully available across all supported locales (zh-cn, en, zh-tw, ja-jp, ko-kr, es-es, fr-fr, de-de, ar-sa, vi-vn). Navigation/build checks have been verified to avoid 404s.
 - **[2026-03-29]** ✨ **Vibe Stories launched and upgraded with real user journeys**: Added a new homepage Vibe Stories section with an interactive carousel and dedicated story pages, then replaced placeholder content with four real user stories featuring a rural primary school teacher, a college student, a high school IT teacher, and a truck driver who built real products with AI. [👉 View the stories](https://datawhalechina.github.io/easy-vibe/zh-cn/vibe-stories/story-1.html)
 - **[2026-03-26]** 🚀 **Major Stage 2 practice update**: Completed the SaaS capstone project "[Your First SaaS Full-Stack App: Copywriting Generator Website](https://datawhalechina.github.io/easy-vibe/en/stage-2/assignments/fullstack-app/)" and substantially expanded the "[How to integrate Stripe and payment systems](https://datawhalechina.github.io/easy-vibe/en/stage-2/backend/stripe-payment/)" section, plus key content around multi-product UI and WeChat Mini Program backend workflows.
 - **[2026-03-25]** 📚 **New appendix: User Research and Requirement Validation**: Added four new articles covering idea sourcing, the Double Diamond model, Jobs to Be Done, and The Mom Test to help beginners discover and validate product ideas. [👉 Read the appendix](https://datawhalechina.github.io/easy-vibe/en/appendix/)

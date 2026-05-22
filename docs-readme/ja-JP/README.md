@@ -12,6 +12,12 @@
 
 <a href="https://trendshift.io/repositories/22079" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22079" alt="datawhalechina/easy-vibe | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
+<p align="center" style="font-size: 1.05em; color: #666; margin: 16px 0;">
+  你好 · Hello · 哈囉 · こんにちは · 안녕하세요 · Hola · Bonjour · Hallo · مرحبا · Xin chào<br>
+  チュートリアルの第1部は10言語に対応しました。世界中の仲間たち、一緒に coding を始めましょう！<br>
+  <span style="font-size: 0.9em; color: #888;">我们的教程（第一部分）已经支持 10 种语言，欢迎世界各地的朋友一起 coding！</span>
+</p>
+
 <p align="center">
   🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">探索を始める</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/en/appendix/">インタラクティブ教材</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">OpenClaw を学ぶ</a> · 📖 <a href="#table-of-contents">目次</a><br>
   <span style="font-size: 0.85em; color: #888;">🚀 <a href="https://datawhalechina.github.io/easy-vibe/welcome.html">开始体验</a> · ✨ <a href="https://datawhalechina.github.io/easy-vibe/zh-cn/appendix/">交互式教程</a> · 🦞 <a href="https://github.com/datawhalechina/hello-claw">学习 OpenClaw</a> · 📖 <a href="#table-of-contents">查看目录</a></span>
@@ -145,6 +151,7 @@ Easy-Vibe は、それを本物のプロダクトにする方法を教えます�
 
 ## 🔥 ニュース
 
+- **[2026-05-20]** 🌍 **Stage 1 の多言語カバーが完了**：Stage 1 はサポート対象の全言語（zh-cn, en, zh-tw, ja-jp, ko-kr, es-es, fr-fr, de-de, ar-sa, vi-vn）で利用可能になりました。ナビゲーション/ビルドの確認を行い、404 を避けています。
 - **[2026-03-29]** ✨ **Vibe ストーリーズを公開し、実ユーザーの体験談にアップグレード**：ホームページにインタラクティブなカルーセルと専用ストーリーページを追加し、仮の内容を農村の小学校教師、大学生、高校の情報技術教師、トラック運転手による 4 つの実話に差し替えました。[👉 ストーリーを見る](https://datawhalechina.github.io/easy-vibe/zh-cn/vibe-stories/story-1.html)
 - **[2026-03-26]** 🚀 **ステージ 2 実践コンテンツの大幅更新**：SaaS キャップストーンプロジェクト「[最初の SaaS フルスタックアプリ：コピー生成サイト](https://datawhalechina.github.io/easy-vibe/en/stage-2/assignments/fullstack-app/)」を完成し、「[Stripe などの決済システムの統合方法](https://datawhalechina.github.io/easy-vibe/en/stage-2/backend/stripe-payment/)」セクションを大幅に拡充し、マルチプロダクト UI や WeChat ミニプログラムのバックエンドワークフローに関する重要コンテンツも追加。
 - **[2026-03-25]** 📚 **新規附録：ユーザー調査と要件検証**：アイデアの探し方、ダブルダイヤモンドモデル、Jobs to Be Done、The Mom Test の 4 つの新記事を追加し、初心者が製品アイデアを発見・検証できるよう支援。[👉 附録を読む](https://datawhalechina.github.io/easy-vibe/en/appendix/)

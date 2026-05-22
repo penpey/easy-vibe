@@ -68,7 +68,7 @@ AI 시대, 특히 AI IDE를 사용할 때는 핵심 원칙 하나를 기억하�
 ## 2. IDE란 무엇이고 왜 필요할까
 
 ::: info 예습 팁
-IDE가 무엇인지, 각 인터페이스 요소가 어떤 역할을 하는지 아직 익숙하지 않다면 [IDE 소개](/ko-kr/appendix/2-development-tools/ide-basics)를 먼저 읽고 IDE의 기본 개념과 흔한 기능을 예습하는 것이 좋습니다.
+IDE가 무엇인지, 각 인터페이스 요소가 어떤 역할을 하는지 아직 익숙하지 않다면 [IDE 소개](/zh-cn/appendix/2-development-tools/ide-basics)를 먼저 읽고 IDE의 기본 개념과 흔한 기능을 예습하는 것이 좋습니다.
 :::
 
 초기 프로그래밍 시대에는 간단한 텍스트 편집기와 언어 처리기만 있으면 충분했습니다. 하지만 프로젝트 복잡도가 증가하면서 개발자들은 파일을 효율적으로 관리하고, 문법 강조와 디버깅을 지원하는 도구를 절실히 필요로 하게 되었고, 그래서 통합 개발 환경(IDE)이 등장했습니다.
@@ -103,7 +103,7 @@ VS Code의 핵심 철학은 “모든 것은 플러그인”입니다. 플러그
 
 정리하면 IDE는 개발자가 코드를 효율적으로 쓰고 프로그램을 실행하도록 돕는 도구 묶음입니다.
 
-더 구체적인 설명은 [부록의 가상 IDE 시각화 IDE 원리 부분](/ko-kr/appendix/2-development-tools/ide-basics)을 확인하세요.
+더 구체적인 설명은 [부록의 가상 IDE 시각화 IDE 원리 부분](/zh-cn/appendix/2-development-tools/ide-basics)을 확인하세요.
 
 ## 3. AI IDE와 일반 IDE는 무엇이 다를까
 
@@ -507,7 +507,7 @@ vibe coding 초보자에게 가장 어려운 것은 오히려 무엇이 “베�
 - **Panel(하단 패널)**: 터미널과 출력 창을 포함합니다.
 - **Status Bar(상태 표시줄)**: 현재 환경 상태를 표시합니다.
 
-더 구체적인 설명은 [부록의 가상 IDE 시각화 IDE 원리 부분](/ko-kr/appendix/2-development-tools/ide-basics)을 확인하세요.
+더 구체적인 설명은 [부록의 가상 IDE 시각화 IDE 원리 부분](/zh-cn/appendix/2-development-tools/ide-basics)을 확인하세요.
 
 <div style="margin: 50px 0;">
   <ClientOnly>
@@ -771,7 +771,7 @@ AI가 아주 성실하게 코드를 줬고, 당신도 정직하게 복사했지�
       <span style="font-size: 12px; color: #909399">이해되지 않는 컴퓨터 용어를 만났을 때 여기서 빠르게 의미를 확인하세요. 한 번 통독하는 것을 추천합니다.</span>
     </el-col>
     <el-col :span="12">
-      <a href="/ko-kr/appendix/2-development-tools/ide-basics" style="text-decoration: none; color: inherit;"><b>부록 2: Visual Studio Code 메뉴 막대 해석</b></a><br/>
+      <a href="/zh-cn/appendix/2-development-tools/ide-basics" style="text-decoration: none; color: inherit;"><b>부록 2: Visual Studio Code 메뉴 막대 해석</b></a><br/>
       <span style="font-size: 12px; color: #909399">AI IDE 인터페이스가 어떤 역할을 하는지 모를 때 아래 내용을 AI와 대화하며 확인하거나 직접 읽어 보세요.</span>
     </el-col>
   </el-row>
@@ -1245,3 +1245,7 @@ API Key는 **아주 긴 “고급 비밀번호 + 신분증 번호”**로 이해
 - 그다음 “무엇에 비유할 수 있는가”를 한 문장으로 쓰기
 - 마지막으로 아주 간단한 예 하나 주기  
   이렇게 하면 당신의 “개인 용어집”이 점점 길어지고 실용적이 되어, 컴퓨터와 더 잘 소통할 수 있게 됩니다.
+---
+title: 'Beginner 2: AI Coding Tools'
+description: 'Move from web AI coding to local development: understand IDE vs AI IDE, build a snake game with Trae, and learn practical AI collaboration tips.'
+---
