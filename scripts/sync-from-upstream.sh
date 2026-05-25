@@ -21,7 +21,7 @@ git checkout learning
 echo "[6/6] 合并 main → learning..."
 git merge main
 
-echo "[7/8] 推送 learning 到 origin..."
+echo "[7/7] 推送 learning 到 origin..."
 git push origin learning
 
 echo "✅ 同步完成！"
